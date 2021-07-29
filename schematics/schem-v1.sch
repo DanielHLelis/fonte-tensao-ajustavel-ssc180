@@ -75,24 +75,24 @@
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
 <library name="con-amp" urn="urn:adsk.eagle:library:127">
-<description>&lt;b&gt;AMP Connectors&lt;/b&gt;&lt;p&gt;
-RJ45 Jack connectors&lt;br&gt;
- Based on the previous libraris:
- &lt;ul&gt;
- &lt;li&gt;amp.lbr
- &lt;li&gt;amp-j.lbr
- &lt;li&gt;amp-mta.lbr
- &lt;li&gt;amp-nlok.lbr
- &lt;li&gt;amp-sim.lbr
- &lt;li&gt;amp-micro-match.lbr
- &lt;/ul&gt;
- Sources :
- &lt;ul&gt;
- &lt;li&gt;Catalog 82066 Revised 11-95 
- &lt;li&gt;Product Guide 296785 Rev. 8-99
- &lt;li&gt;Product Guide CD-ROM 1999
- &lt;li&gt;www.amp.com
- &lt;/ul&gt;
+<description>&lt;b&gt;AMP Connectors&lt;/b&gt;&lt;p&gt;
+RJ45 Jack connectors&lt;br&gt;
+ Based on the previous libraris:
+ &lt;ul&gt;
+ &lt;li&gt;amp.lbr
+ &lt;li&gt;amp-j.lbr
+ &lt;li&gt;amp-mta.lbr
+ &lt;li&gt;amp-nlok.lbr
+ &lt;li&gt;amp-sim.lbr
+ &lt;li&gt;amp-micro-match.lbr
+ &lt;/ul&gt;
+ Sources :
+ &lt;ul&gt;
+ &lt;li&gt;Catalog 82066 Revised 11-95 
+ &lt;li&gt;Product Guide 296785 Rev. 8-99
+ &lt;li&gt;Product Guide CD-ROM 1999
+ &lt;li&gt;www.amp.com
+ &lt;/ul&gt;
  &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
 <package name="10X02MTA" urn="urn:adsk.eagle:footprint:8080361/1" library_version="4">
@@ -14641,7 +14641,6 @@ grid 2.54 mm</description>
 <part name="D2" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4004" device="" package3d_urn="urn:adsk.eagle:package:43336/1" value="1N4007"/>
 <part name="D3" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4004" device="" package3d_urn="urn:adsk.eagle:package:43336/1" value="1N4007"/>
 <part name="D4" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4004" device="" package3d_urn="urn:adsk.eagle:package:43336/1" value="1N4007"/>
-<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E5-13" package3d_urn="urn:adsk.eagle:package:23375/1" value="1000uF"/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="1k"/>
 <part name="1N5351" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="ZENER-DIODE" device="DO41Z10" package3d_urn="urn:adsk.eagle:package:43341/1"/>
 <part name="R2" library="pot" library_urn="urn:adsk.eagle:library:331" deviceset="3RP/1610N" device="" package3d_urn="urn:adsk.eagle:package:22726/1" value="10k"/>
@@ -14649,6 +14648,7 @@ grid 2.54 mm</description>
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="2.2k"/>
 <part name="Q1" library="transistor-power" library_urn="urn:adsk.eagle:library:400" deviceset="TIP120" device="" package3d_urn="urn:adsk.eagle:package:29488/1"/>
 <part name="OUTPUT" library="con-amp" library_urn="urn:adsk.eagle:library:127" deviceset="MTA02-100" device="" package3d_urn="urn:adsk.eagle:package:8081649/1"/>
+<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E3.5-10" package3d_urn="urn:adsk.eagle:package:23351/1" value="470uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -14674,10 +14674,6 @@ grid 2.54 mm</description>
 <instance part="D4" gate="1" x="15.24" y="73.66" smashed="yes">
 <attribute name="NAME" x="17.78" y="74.1426" size="1.778" layer="95"/>
 <attribute name="VALUE" x="17.78" y="71.3486" size="1.778" layer="96"/>
-</instance>
-<instance part="C1" gate="G$1" x="60.96" y="63.5" smashed="yes">
-<attribute name="NAME" x="61.976" y="64.135" size="1.778" layer="95"/>
-<attribute name="VALUE" x="61.976" y="59.309" size="1.778" layer="96"/>
 </instance>
 <instance part="R1" gate="G$1" x="88.9" y="66.04" smashed="yes" rot="R90">
 <attribute name="NAME" x="87.4014" y="62.23" size="1.778" layer="95" rot="R90"/>
@@ -14706,6 +14702,10 @@ grid 2.54 mm</description>
 <instance part="OUTPUT" gate="G$1" x="129.54" y="48.26" smashed="yes" rot="R270">
 <attribute name="NAME" x="132.08" y="50.8" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="125.73" y="43.18" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="C1" gate="G$1" x="60.96" y="63.5" smashed="yes">
+<attribute name="NAME" x="61.976" y="64.135" size="1.778" layer="95"/>
+<attribute name="VALUE" x="61.976" y="59.309" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -14745,7 +14745,6 @@ grid 2.54 mm</description>
 <wire x1="35.56" y1="66.04" x2="35.56" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="66.04" x2="48.26" y2="66.04" width="0.1524" layer="91"/>
 <junction x="35.56" y="66.04"/>
-<pinref part="C1" gate="G$1" pin="+"/>
 <wire x1="60.96" y1="73.66" x2="60.96" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="66.04" x2="48.26" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="73.66" x2="60.96" y2="73.66" width="0.1524" layer="91"/>
@@ -14757,6 +14756,7 @@ grid 2.54 mm</description>
 <junction x="88.9" y="73.66"/>
 <pinref part="Q1" gate="1" pin="C"/>
 <wire x1="114.3" y1="73.66" x2="114.3" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="+"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -14768,13 +14768,10 @@ grid 2.54 mm</description>
 <wire x1="12.7" y1="63.5" x2="7.62" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="63.5" x2="7.62" y2="48.26" width="0.1524" layer="91"/>
 <junction x="12.7" y="63.5"/>
-<pinref part="C1" gate="G$1" pin="-"/>
-<wire x1="60.96" y1="58.42" x2="60.96" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="48.26" x2="60.96" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="1N5351" gate="G$1" pin="A"/>
+<wire x1="60.96" y1="48.26" x2="88.9" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="50.8" x2="88.9" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="48.26" x2="60.96" y2="48.26" width="0.1524" layer="91"/>
-<junction x="60.96" y="48.26"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="33.02" x2="106.68" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="30.48" x2="88.9" y2="30.48" width="0.1524" layer="91"/>
@@ -14785,6 +14782,9 @@ grid 2.54 mm</description>
 <wire x1="114.3" y1="45.72" x2="114.3" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="30.48" x2="106.68" y2="30.48" width="0.1524" layer="91"/>
 <junction x="106.68" y="30.48"/>
+<pinref part="C1" gate="G$1" pin="-"/>
+<wire x1="60.96" y1="58.42" x2="60.96" y2="48.26" width="0.1524" layer="91"/>
+<junction x="60.96" y="48.26"/>
 </segment>
 </net>
 <net name="N$3" class="0">
